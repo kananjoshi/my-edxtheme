@@ -1,0 +1,23 @@
+<%namespace file='../main.html' import="login_query"/>
+
+ % if user.is_authenticated:                              
+                              <a href="#">Autenticated</a>
+                            % else:
+                                <div class="col-md-2 col-sm-3">
+                                  <ul class="list-inline quik-links">
+                                      <li><a href="http://localhost:18000/login?next=%2Fcourses">Sign In</a></li>
+                                        <li><a href="http://localhost:18000/register?next=%2Fcourses" class="btn btn-default demo">Register</a></li>
+                                    </ul>
+                                </div>
+                            % endif
+
+        % if user.is_authenticated:
+            <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+        % else:
+            <div class="col-md-2 col-sm-3">
+                <ul class="list-inline quik-links">
+                    <li><a href="http://localhost:18000/login?next=%2Fcourses">Sign In</a></li>
+                    <li><a href="http://localhost:18000/register?next=%2Fcourses" class="btn btn-default demo">Register</a></li>
+                </ul>
+            </div>
+        % endif

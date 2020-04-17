@@ -1,0 +1,59 @@
+<%namespace name='static' file='static_content.html'/>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="${static.url('css/Header.css')}" >
+</head>
+<body>
+     <!-- Header Section Start -->
+        <header id="header"> 
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-12">
+                      <div class="navbar-header secondary">
+                            <a class="navbar-brand" href="#"><img src="${static.url('images/logo.png')}" alt="" class="img-responsive"></a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                        </div>
+                    </div> 
+                    
+
+                    % if user.is_authenticated:
+                      <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+                    % else:
+                        <div class="col-md-7 col-sm-9">
+                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav">
+                                  <li class="active has-child"><a href="#">About Us</a></li>
+                                  <li class="has-child"><a href="#">Blog</a>
+                                  </li>
+                                  <li><a href="#">FAQs</a></li>
+                                  <li><a href="#">Contact Us</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                            <ul class="list-inline quik-links">
+                                <li><a href="http://localhost:18000/login?next=%2Fcourses">Sign In</a></li>
+                                <li><a href="http://localhost:18000/register?next=%2Fcourses" class="btn btn-default demo">Register</a></li>
+                            </ul>
+                        </div>
+                    % endif     
+                            
+                    
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+</body>
+</html>

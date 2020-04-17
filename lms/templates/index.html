@@ -1,0 +1,478 @@
+<%namespace name='static' file='/static_content.html'/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Template</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+    
+    <link rel="stylesheet" type="text/css" href=" ${static.url('css/style.css')}">    
+    <link type="text/css"  href=" ${static.url('css/slick.css')}" rel="stylesheet"><!-- Slider Stylesheet -->
+    <link type="text/css" href=" ${static.url('css/css3.css')}" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css"  href=" ${static.url('css/custom.css')}" >
+          
+
+		    
+    
+</head>
+<body>
+
+
+   <div id="page">
+        <!-- Header Section Start -->
+        <header id="header"> 
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-12">
+                      <div class="navbar-header">
+                            <a class="navbar-brand" href="#"><img src=" ${static.url('images/logo.png')}" alt="" class="img-responsive"></a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div> 
+                    <div class="col-md-7 col-sm-9">
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active has-child"><a href="#">About Us</a></li>
+                                <li class="has-child"><a href="#">Blog</a>
+                                </li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="col-md-2 col-sm-3">
+                        <ul class="list-inline quik-links">
+                            <li>
+                              <a href="http://localhost:18000/login?next=%2Fcourses">Sign In</a>
+                            </li>
+                            <li>
+                              <a href="http://localhost:18000/register?next=%2Fcourses" class="btn btn-default demo">Register
+                              </a>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+        
+        <!-- Banner Section Start -->
+        <section class="banner">
+          <div class="slider single-item slick-initialized slick-slider slick-dotted" role="toolbar">
+                <div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 8190px; transform: translate3d(-1365px, 0px, 0px);" role="listbox"><div class="banner-image slick-slide slick-cloned" style="background-image: url(${static.url('images/a.jpg')}); width: 1365px;" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                  <img src="${static.url('images/a.jpg')}" alt="" style="display: none;">
+                </div><div class="banner-image slick-slide slick-current slick-active" style="background-image: url(${static.url('images/a.jpg')}); width: 1365px;" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                  <img src="${static.url('images/b.jpg')}" alt="" style="display: none;">
+                </div><div class="banner-image slick-slide" style="background-image: url(${static.url('images/b.jpg')}); width: 1365px;" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                  <img src="${static.url('images/a.jpg')}" alt="" style="display: none;">
+                </div><div class="banner-image slick-slide" style="background-image: url(${static.url('images/a.jpg')}); width: 1365px;" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                  <img src="${static.url('images/b.jpg')}" alt="" style="display: none;">
+                </div><div class="banner-image slick-slide" style="background-image: url(${static.url('images/b.jpg')}); width: 1365px;" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03">
+                  <img src="${static.url('images/a.jpg')}" alt="" style="display: none;">
+                </div><div class="banner-image slick-slide slick-cloned" style="background-image: url(${static.url('images/a.jpg')}); width: 1365px;" data-slick-index="4" aria-hidden="true" tabindex="-1">
+                  <img src="${static.url('images/b.jpg')}" alt="" style="display: none;">
+                </div></div></div>
+                
+                
+                
+            <ul class="slick-dots" style="display: block;" role="tablist">
+
+                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
+                    <button type="button" data-role="none" role="button" tabindex="0">1</button>
+                </li>
+
+                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01">
+                    <button type="button" data-role="none" role="button" tabindex="0">2</button>
+                </li>
+
+                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02">
+                    <button type="button" data-role="none" role="button" tabindex="0">3</button>
+                </li>
+
+                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03">
+                    <button type="button" data-role="none" role="button" tabindex="0">4</button>
+                </li>
+                
+            </ul>
+        </div>
+            <div class="banner-sidebar">
+              <div class="sidebar-content">
+                  <div class="heading-one">Online </div>
+                    <div class="input-box">
+                        <input type="text" name="textfield" id="textfield" placeholder="Search here">
+                        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <a href="#" class="btn btn-default demo">Start learning now</a>
+                </div>
+            </div>
+        </section>
+       
+        <!-- ==================== Banner End ============= -->
+
+
+
+	    <!-- ================================= Content start ============================== -->
+		<div class="content"> 
+        	<!-- Courses Section Start -->
+        	<section class="programs-list section-block">
+                <div class="container">
+                	<div class="heading clearfix">
+                        <h1>Available Courses</h1>
+                        <a href="#" class="btn btn-default demo">View All Courses</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                           			<img src="${static.url('images/android.jpg')}" alt="" class="img-responsive">
+                                </div>
+                                <div class="course-detail">
+                                    <a href="#" class="name">Learn Android Programming in Detail</a>
+                                     <div class="price">Rs 199</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                            		<img src="${static.url('images/python.jpg')}" alt="" class="img-responsive">
+								</div>
+                                <div class="course-detail">
+                                	<a href="#" class="name">The Ultimate Python  Programming Tutorial</a>
+                                    <div class="price">Rs 99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                            		<img src="${static.url('images/bigdata.jpg')}" alt="" class="img-responsive">
+								</div>
+                                <div class="course-detail">
+                                	<a href="#" class="name">The Big Data Tutorial </a>
+                                    <div class="price">Rs 99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                            		<img src="${static.url('images/b41.jpg')}" alt="" class="img-responsive">
+								</div>
+                                <div class="course-detail">
+                                	<a href="#" class="name">The Bootstrap Programming Tutorial</a>
+                                    <div class="price">Rs 99</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                           			<img src="${static.url('images/js.jpg')}" alt="" class="img-responsive">
+                                </div>
+                                <div class="course-detail">
+                                    <a href="#" class="name">learn Java script in details</a>
+                                     <div class="price">Rs 199</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                            		<img src="${static.url('images/ai.jpg')}" alt="" class="img-responsive">
+								</div>
+                                <div class="course-detail">
+                                	<a href="#" class="name">The Artificial Intelligence tutorial</a>
+                                    <div class="price">Rs 99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                            		<img src="${static.url('images/html.jpg')}" alt="" class="img-responsive">
+								</div>
+                                <div class="course-detail">
+                                	<a href="#" class="name">Learn HTML5 Programming From Scratch</a>
+                                    <div class="price">Rs 99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                        	<div class="course">
+                           		<div class="course-img">
+                            		<img src="${static.url('images/node.jpg')}" alt="" class="img-responsive">
+								</div>
+                                <div class="course-detail">
+                                	<a href="#" class="name">The Node js Programming Tutorial</a>
+                                    <div class="price">Rs 99</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+                        
+                        
+                        
+        			</div>
+        		</div>
+        	</section>
+        </div>
+
+
+         <!-- ========================== Content end ================== -->
+
+          <!-- ========================== Videos Start ================== -->
+
+
+         <section class="latest-videos section-block ">
+                <div class="container">
+                    <div class="heading clearfix">
+                        <h1>Latest Videos</h1>
+                        <a href="#" class="btn btn-default demo">View All Courses</a>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                          <div class="video">
+                              <img src="${static.url('images/wp.jpg')}" alt="" class="img-responsive">
+                                <a href="#" class="play-btn"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video">
+                              <img src="${static.url('images/java.jpg')}" alt="" class="img-responsive">
+                                <a href="#" class="play-btn"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video">
+                              <img src="${static.url('images/is.jpg')}" alt="" class="img-responsive">
+                                <a href="#" class="play-btn"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+          <!-- ========================== Videos end ================== -->
+
+ <!-- ========================== Learn with us starts ================== -->
+
+            <section class="learn section-block">
+                
+                    <center>
+                      <font size="35px" color="#ffffff" face="ariel" style="margin-bottom: 100px;">Learn with us</font>
+                    </center>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                                <span class="icon">
+                                         <img src="${static.url('images/icon1.png')}" alt=""href="#">
+                                </span>   
+                                
+                                <a class="text-learn" href="#">
+                                   <h6>Hello This is Dummy Text.</h6>
+                                </a>
+                                                       
+                         </div>
+
+                          <div class="col-md-3 col-sm-4">
+                                <span class="icon">
+                                         <img src="${static.url('images/icon2.png')}" alt=""href="#">
+                                </span>   
+                                
+                                <a class="text-learn" href="#">
+                                   <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</h6>
+                                </a>
+                                                       
+                         </div>
+
+
+                          <div class="col-md-3 col-sm-4">
+                                <span class="icon">
+                                         <img src="${static.url('images/icon3.png')}" alt=""href="#">
+                                </span>   
+                                
+                                <a class="text-learn" href="#">
+                                   <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</h6>
+                                </a>
+                                                       
+                         </div>
+
+                          <div class="col-md-3 col-sm-4">
+                                <span class="icon">
+                                         <img src="${static.url('images/icon4.png')}" alt=""href="#">
+                                </span>   
+                                
+                                <a class="text-learn" href="#">
+                                   <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</h6>
+                                </a>
+                                                       
+                         </div>
+                    </div>
+                  
+              </section>
+ 
+<!-- ========================== Learn with us ends ================== -->
+
+
+ <!-- News Block Section Start -->
+            <section class="news-block section-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="heading clearfix">
+                                <h1>Video</h1>
+                            </div>
+                            <div class="video">
+                            	<img src="${static.url('images/B4.jpg')}" width="100%" height="100%" alt="" class="img-responsive">
+                               	<a href="#" class="play-btn" style="top:60%; left:50% ;position:absolute; color:red; font-size:80px; "><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="heading clearfix">
+                                <h1>Blog Post & News</h1>
+                            </div>
+                            <div class="news-list">
+                            	<h4>News1</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="readmore">Readmore</a>
+                            </div>
+                            <div class="news-list">
+                            	<h4>News2</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="readmore">Readmore</a>
+                            </div>
+                            <div class="news-list">
+                            	<h4>News3</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="readmore">Readmore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- News Block Section End -->
+            
+            <!-- About Us Section Start -->
+            <section class="about-us section-block">
+                <div class="container">
+                	<div class="heading clearfix">
+                        <h1>What People Say About Us</h1>
+                        <a href="#" class="btn btn-default demo">View All</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="feedback">
+                            	<p>It would be easy to say “never”, but I suggest that that is not true. We can find useful insight in the criticisms of those who have good character and who know us fairly well.</p>
+    							<div class="user-info"> 
+                                    <div class="user-img" ><img src="${static.url('images/user-img1.jpg')}" style="height: 40%;width: 40%" alt="" /></div>
+                                    <div class="user-detail">
+                                        <div class="name">Mark Joie</div>
+                                        <div class="desg">software engineer</div>
+                                    </div>
+                                </div>
+    						</div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="feedback">
+                            	<p>It would be easy to say “never”, but I suggest that that is not true. We can find useful insight in the criticisms of those who have good character and who know us fairly well.</p>
+    							<div class="user-info"> 
+                                    <div class="user-img" ><img src="${static.url('images/user-img2.jpg')}"  style="height: 40%;width: 40%" alt="" /></div>
+                                    <div class="user-detail">
+                                        <div class="name">Mark Joie</div>
+                                        <div class="desg">software engineer</div>
+                                    </div>
+                                </div>
+    						</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Us Section End -->
+        </div>
+        <!-- Contetnt End -->
+
+
+<!-- ================== footer starts =================== -->
+
+     <!-- Footer Section Start --> 
+        <footer id="footer" style="background: #000">
+          <div class="container">
+              <div class="top-footer">
+                <div class="row">
+                        <div class="col-md-4">
+                          <div class="contact-info">
+                                <a href="#" class="logo"><img src="${static.url('images/logo-footer.png')}" alt=""></a>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i>(01) 123 456 789 </p>
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:tellus@entuze.com">tellus@entuze.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <h4>About Us</h4>
+                            <ul class="links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <h4>Links</h4>
+                            <ul class="links">
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Honor Code</a></li>
+                                <li><a href="#">Courses</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <h4>Connect with us</h4>
+                            <ul class="list-inline social-share">
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="copy-right">© 2017 BuildaBazaar. All rights reserved.</div>
+                </div> 
+            </div>
+        </footer> 
+
+  <!-- ================== footer ends ==================== -->
+
+
+
+<!-- ============ JAVA script files================================ -->
+    
+		    
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+       
+
+         <script src="${static.url('js/custom.js')}"></script>
+		   
+        <meta charset="utf-8"/>
+<!-- ================================= JAVA script files ========================================== -->
+
+</body>
+</html>
